@@ -118,20 +118,19 @@ Afin de mieux comprendre le déroulement des séquences d’interaction entre l�
 
 Comme indiqué dans le diagramme de classe UML, une personne se caractérise par un nom (name), le nombre de livres maximum qu’il peut emprunter en même temps (maxBooks) et sa date d’inscription (registrationDate). Libre à vous d’ajouter d’autres attributs. La classe Person est associée à la classe Book, à savoir qu’un membre peut emprunter plusieurs livres. Cela implique la présence d’un attribut books qui sera la liste des livres empruntés par le membre.
 
+
 ´´´
 
 package be.iccbxl.poo.data;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.UUID;
-
 public class Person {
 	protected UUID id;
 	private String name;
 	private byte maxBooks;
 	private LocalDate registrationDate;
-	private ArrayList<Book> books;
-	
+	private ArrayList<Book> books;	
 	public Person(UUID id, String name) {
 		this.id = id;
 		this.name = name;
@@ -139,7 +138,6 @@ public class Person {
 		this.registrationDate = LocalDate.now();
 		this.books = new ArrayList<Book>();
 	}
-
 	public String getName() {
 		return name;
 	}
@@ -183,7 +181,6 @@ Après avoir définit les attributs (id, name, maxBooks, registrationDate et boo
 Nous pouvons aussi implémenter les deux méthodes « métier » qui consiste à emprunter (borrows) et à restituer (returns) un livre.
 
 
-´´´	
 
 	public void borrows(Book book) {
 		this.books.add(book);
@@ -195,11 +192,10 @@ Nous pouvons aussi implémenter les deux méthodes « métier » qui consiste 
 		this.books.remove(book);
 		book.setBorrower(null);
 		book.borrowingDate = null;
-	}
-	
+	}	
 }
 
-´´´
+
 
 #### Travaux pratiques
 
