@@ -118,7 +118,6 @@ Afin de mieux comprendre le déroulement des séquences d’interaction entre l�
 
 Comme indiqué dans le diagramme de classe UML, une personne se caractérise par un nom (name), le nombre de livres maximum qu’il peut emprunter en même temps (maxBooks) et sa date d’inscription (registrationDate). Libre à vous d’ajouter d’autres attributs. La classe Person est associée à la classe Book, à savoir qu’un membre peut emprunter plusieurs livres. Cela implique la présence d’un attribut books qui sera la liste des livres empruntés par le membre.
 
-
 ´´´
 
 package be.iccbxl.poo.data;
