@@ -9,9 +9,8 @@ Introduction au langage Java et à l'écosystème Spring au travers d'une étude
 
 ### Présentation du projet
 Application de gestion bibliothécaire (Library Application)
-*f
-*f
-    * Application qui gère des livres, des membres et les emprunts de livres par les membres.
+
+	* Application qui gère des livres, des membres et les emprunts de livres par les membres.
     * Modèle de données : l’application présentera les classes principales suivantes :
         * Person : name, maxBooks (nombre maximum de livres physiques que cette personne peut emprunter en même temps), registrationDate (date d’inscription)
         * Book : title, author, totalPages, person (personne qui a emprunté le document), loanPeriod (durée d’emprunt), rentalPrice (prix de location), borrowingDate (date d’emprunt), language (langue)
