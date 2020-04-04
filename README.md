@@ -1,9 +1,6 @@
 # LibraryApplication
 Application de gestion bibliothécaire
-`code`
-`
-coode
-`
+
 Introduction au langage Java et à l'écosystème Spring au travers d'une étude de cas
 
 
@@ -122,7 +119,7 @@ Afin de mieux comprendre le déroulement des séquences d’interaction entre l�
 Comme indiqué dans le diagramme de classe UML, une personne se caractérise par un nom (name), le nombre de livres maximum qu’il peut emprunter en même temps (maxBooks) et sa date d’inscription (registrationDate). Libre à vous d’ajouter d’autres attributs. La classe Person est associée à la classe Book, à savoir qu’un membre peut emprunter plusieurs livres. Cela implique la présence d’un attribut books qui sera la liste des livres empruntés par le membre.
 
 
-´´´
+`
 
 package be.iccbxl.poo.data;
 import java.time.LocalDate;
@@ -177,7 +174,7 @@ public class Person {
 				+ (books != null ? books.subList(0, Math.min(books.size(), maxLen)) : null) + "]";
 	}
 
-´´´
+`
 
 
 Après avoir définit les attributs (id, name, maxBooks, registrationDate et books), vous pouvez facilement générer le constructeur, les getters & setters et la méthode toString grâce à votre IDE Eclipse. Notez que pour le constructeur seul l’id et le name sont des paramètres requis, les autres attributs sont définis dans le corps de la méthode.
@@ -210,7 +207,7 @@ Nous pouvons aussi implémenter les deux méthodes « métier » qui consiste 
 La classe MyLibrary se définit par un nom (name) et regroupe les livres (books) et les membres (people). Nous pouvons envisager aussi les méthodes de recherche getAllLateBooks, pour récupérer les livres en retard, et findMemberByName, pour trouver un membre au moyen de son nom.
 
 
-´´´
+`
 
 package be.iccbxl.poo.data;
 
@@ -296,13 +293,13 @@ public class MyLibrary {
 				+ (people != null ? people.subList(0, Math.min(people.size(), maxLen)) : null);
 	}
 
-´´´
+`
 
 
 Profitons-en pour définir les methods qui permettront d’ajouter des livres et des membres : addBook et addPerson, ainsi que les méthodes d’affichages : printBooks et printMembers.
 
 
-´´´
+`
 
 package be.iccbxl.poo.data;
 
@@ -347,12 +344,12 @@ import java.util.Iterator;
 		}
 		return cpt;
 	}
-´´´
+`
 
 
 Nous pouvons charger des livres et des membres à partir de fichiers de sauvegarde au format CSV.
 
-´´´
+`
 package be.iccbxl.poo.data;
 
 import java.io.BufferedReader;
@@ -408,7 +405,7 @@ import java.util.StringTokenizer;
 		return cpt;
 	}
 }
-´´´
+`
 
 
 Travaux pratiques
