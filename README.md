@@ -5,9 +5,10 @@ Introduction au langage Java et à l'écosystème Spring au travers d'une étude
 
 
 
-## Cédryc Ruth - mars 2020
+### Cédryc Ruth - mars 2020
 
 ### Présentation du projet
+
 Application de gestion bibliothécaire (Library Application)
 
 	* Application qui gère des livres, des membres et les emprunts de livres par les membres.
@@ -30,7 +31,7 @@ Application de gestion bibliothécaire (Library Application)
         ◦ Calculer le nombre de jours restants avant restitution d’un livre emprunté
         ◦ Importer / Exporter les données dans un fichier texte
         
-Nota bene :
+### Nota bene :
 
     • Un livre virtuel (OnlineBook) n’entre pas dans le compte du nombre maximum de livres empruntés par le membre (maxBooks) mais il ne peut pas être emprunté par plus de maxPeople à la fois.
     • Un livre virtuel est automatiquement restitué si sa durée d’emprunt a expirée. Cette vérification se fera lors de la lecture du livre (affichage du contenu).
@@ -87,13 +88,13 @@ Afin de mieux comprendre le déroulement des séquences d’interaction entre l�
     12. Le système calcule la date de retour.
     13. Le système affiche une synthèse (Emprunteur, livre, date de retour).
     
-Scénario alternatif
+#### Scénario alternatif
 
 3a. 5a. 7a. 9a. L’utilisateur peut abandonner la séquence en entrant la valeur « 0 » au clavier. Cette possibilité lui est affichée dans chaque menu.
 
-Afficher les statistiques
+### Afficher les statistiques
 
-Scénario nominal
+#### Scénario nominal
 
     1. Le système affiche le menu principal.
     2. L’utilisateur entre au clavier la valeur "A" pour l’option « Afficher les statistiques ».
@@ -105,15 +106,15 @@ Scénario nominal
         e. nombre de livres en retard.
     4. Le système affiche, sous forme de graphique, le nombre de membres inscrits chaque mois depuis janvier de l’année en cours.
 
-Travaux pratiques
+#### Travaux pratiques
 
     Q1. Écrire l’algorithme de cette application mais en ne traitant que l’affichage des statistiques. Les données (membres, livres) seront prédéfinies dans des tableaux. Les erreurs de saisie seront signalées à l’utilisateur qui devra alors ressaisir la donnée erronée. L’application se termine quand l’utilisateur choisit la commande « 0 » dans le menu principal.
 
     Q2. Traduire l’algorithme en Java. On utilisera la méthode statique 	[main] d’une classe [MainApplication1] pour faire le traitement demandé.
 
-Partie 2 – Définition des classes
+## Partie 2 – Définition des classes
 
-La classe Person
+### La classe Person
 
 Comme indiqué dans le diagramme de classe UML, une personne se caractérise par un nom (name), le nombre de livres maximum qu’il peut emprunter en même temps (maxBooks) et sa date d’inscription (registrationDate). Libre à vous d’ajouter d’autres attributs. La classe Person est associée à la classe Book, à savoir qu’un membre peut emprunter plusieurs livres. Cela implique la présence d’un attribut books qui sera la liste des livres empruntés par le membre.
 
