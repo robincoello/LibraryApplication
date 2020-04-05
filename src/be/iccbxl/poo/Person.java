@@ -76,7 +76,11 @@ public class Person {
 		
 	}
 	
-	
+	public void returns(Book book){
+		this.books.remove(book); 
+		book.setBorrower(null);
+		book.setBorrowingDate(null);
+	}
 	
 
 }
